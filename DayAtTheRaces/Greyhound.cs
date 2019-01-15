@@ -11,6 +11,7 @@ namespace DayAtTheRaces
     {
         public int StartingPosition;
         public int RacetrackLength;
+        public string Name;
         public PictureBox MyPictureBox = null;
         public int Location = 0;
         public bool Winner = false;
