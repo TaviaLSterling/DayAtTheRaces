@@ -17,7 +17,7 @@ namespace DayAtTheRaces
         public string GetDescription()
         {
             if (Amount == 0)
-                return Bettor.Name + "hasn't placed a bet";
+                return Bettor.Name + "has not placed a bet";
             else
                 return Bettor.Name + " placed a bet of " + Amount + " dollars on " + Dog;
         }
