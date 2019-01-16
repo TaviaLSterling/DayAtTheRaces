@@ -58,7 +58,6 @@ namespace DayAtTheRaces
                 dogsArray[i].Run();
                 if (dogsArray[i].Run() == true)
                 {
-                    // dogsArray[i].Run() = true;
                     timer2.Stop();
                     timer2.Enabled = false;
                     MessageBox.Show(dogsArray[i].Name + " has won the race");
@@ -68,6 +67,19 @@ namespace DayAtTheRaces
                 }
 
             }
+        }
+
+        private void btnRace_Click(object sender, EventArgs e)
+        {
+            dogsArray[0].TakeStartingPosition();
+            dogsArray[1].TakeStartingPosition();
+            dogsArray[2].TakeStartingPosition();
+            dogsArray[3].TakeStartingPosition();
+            joeBet = 0;
+            bobBet = 0;
+            alBet = 0;
+            btnRace.Enabled = false;
+            timer2.Start();
         }
     }
 }

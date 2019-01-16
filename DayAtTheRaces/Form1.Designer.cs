@@ -102,6 +102,7 @@
             this.btnRace.TabIndex = 5;
             this.btnRace.Text = "Race!";
             this.btnRace.UseVisualStyleBackColor = true;
+            this.btnRace.Click += new System.EventHandler(this.btnRace_Click);
             // 
             // rbJoe
             // 
