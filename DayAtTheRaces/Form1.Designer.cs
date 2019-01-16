@@ -52,7 +52,7 @@
             // 
             this.racetrackPictureBox.Location = new System.Drawing.Point(25, 12);
             this.racetrackPictureBox.Name = "racetrackPictureBox";
-            this.racetrackPictureBox.Size = new System.Drawing.Size(1049, 395);
+            this.racetrackPictureBox.Size = new System.Drawing.Size(1049, 406);
             this.racetrackPictureBox.TabIndex = 0;
             this.racetrackPictureBox.TabStop = false;
             // 
@@ -94,7 +94,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(927, 413);
+            this.button1.Location = new System.Drawing.Point(927, 421);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(156, 91);
             this.button1.TabIndex = 5;
@@ -137,7 +137,7 @@
             // labelJoeBet
             // 
             this.labelJoeBet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelJoeBet.Location = new System.Drawing.Point(554, 410);
+            this.labelJoeBet.Location = new System.Drawing.Point(554, 421);
             this.labelJoeBet.Name = "labelJoeBet";
             this.labelJoeBet.Size = new System.Drawing.Size(284, 23);
             this.labelJoeBet.TabIndex = 9;
@@ -146,7 +146,7 @@
             // labelBobBet
             // 
             this.labelBobBet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelBobBet.Location = new System.Drawing.Point(554, 443);
+            this.labelBobBet.Location = new System.Drawing.Point(554, 449);
             this.labelBobBet.Name = "labelBobBet";
             this.labelBobBet.Size = new System.Drawing.Size(284, 23);
             this.labelBobBet.TabIndex = 10;
@@ -155,7 +155,7 @@
             // labelAlBet
             // 
             this.labelAlBet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelAlBet.Location = new System.Drawing.Point(554, 479);
+            this.labelAlBet.Location = new System.Drawing.Point(554, 481);
             this.labelAlBet.Name = "labelAlBet";
             this.labelAlBet.Size = new System.Drawing.Size(284, 25);
             this.labelAlBet.TabIndex = 11;
