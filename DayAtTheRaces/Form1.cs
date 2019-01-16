@@ -49,5 +49,25 @@ namespace DayAtTheRaces
 
               
         }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            for (int i = 0; i < dogsArray.Length; i++)
+            {
+
+                dogsArray[i].Run();
+                if (dogsArray[i].Run() == true)
+                {
+                    // dogsArray[i].Run() = true;
+                    timer2.Stop();
+                    timer2.Enabled = false;
+                    MessageBox.Show(dogsArray[i].Name + " has won the race");
+                    winningDog = dogsArray[i].Name;
+                    i = dogsArray.Length;
+                    btnRace.Enabled = true;
+                }
+
+            }
+        }
     }
 }

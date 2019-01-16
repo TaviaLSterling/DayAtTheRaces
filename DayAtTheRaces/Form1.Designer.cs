@@ -28,19 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.racetrackPictureBox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRace = new System.Windows.Forms.Button();
             this.rbJoe = new System.Windows.Forms.RadioButton();
             this.rbBob = new System.Windows.Forms.RadioButton();
             this.rbAl = new System.Windows.Forms.RadioButton();
             this.labelJoeBet = new System.Windows.Forms.Label();
             this.labelBobBet = new System.Windows.Forms.Label();
             this.labelAlBet = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.racetrackPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -92,14 +94,14 @@
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
-            // button1
+            // btnRace
             // 
-            this.button1.Location = new System.Drawing.Point(927, 421);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 91);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Race!";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRace.Location = new System.Drawing.Point(927, 421);
+            this.btnRace.Name = "btnRace";
+            this.btnRace.Size = new System.Drawing.Size(156, 91);
+            this.btnRace.TabIndex = 5;
+            this.btnRace.Text = "Race!";
+            this.btnRace.UseVisualStyleBackColor = true;
             // 
             // rbJoe
             // 
@@ -161,6 +163,10 @@
             this.labelAlBet.TabIndex = 11;
             this.labelAlBet.Text = "label3";
             // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -172,7 +178,7 @@
             this.Controls.Add(this.rbAl);
             this.Controls.Add(this.rbBob);
             this.Controls.Add(this.rbJoe);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRace);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -200,13 +206,14 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRace;
         private System.Windows.Forms.RadioButton rbJoe;
         private System.Windows.Forms.RadioButton rbBob;
         private System.Windows.Forms.RadioButton rbAl;
         private System.Windows.Forms.Label labelJoeBet;
         private System.Windows.Forms.Label labelBobBet;
         private System.Windows.Forms.Label labelAlBet;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 
