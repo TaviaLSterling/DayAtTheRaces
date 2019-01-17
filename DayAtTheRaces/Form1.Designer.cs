@@ -114,6 +114,7 @@
             this.rbJoe.TabStop = true;
             this.rbJoe.Text = "radioButton1";
             this.rbJoe.UseVisualStyleBackColor = true;
+            this.rbJoe.CheckedChanged += new System.EventHandler(this.rbJoe_CheckedChanged);
             // 
             // rbBob
             // 
@@ -125,6 +126,7 @@
             this.rbBob.TabStop = true;
             this.rbBob.Text = "radioButton2";
             this.rbBob.UseVisualStyleBackColor = true;
+            this.rbBob.CheckedChanged += new System.EventHandler(this.rbBob_CheckedChanged);
             // 
             // rbAl
             // 
@@ -136,6 +138,7 @@
             this.rbAl.TabStop = true;
             this.rbAl.Text = "radioButton3";
             this.rbAl.UseVisualStyleBackColor = true;
+            this.rbAl.CheckedChanged += new System.EventHandler(this.rbAl_CheckedChanged);
             // 
             // labelJoeBet
             // 
