@@ -23,9 +23,9 @@ namespace DayAtTheRaces
         public string winningDog;
         
         Guy[] guyArray = new Guy[3];
-        private Label labelJoeBet;
-        private Label labelBobBet;
-        private Label labelAlBet;
+        private Label labelJoe;
+        private Label labelBob;
+        private Label labelAl;
         Random Randomizer = new Random();
 
 
@@ -38,9 +38,9 @@ namespace DayAtTheRaces
             dogsArray[2] = new Greyhound() { MyPictureBox = pictureBox3, Name = "Slim", RacetrackLength = racetrackPictureBox.Width - racetrackPictureBox.Width, StartingPosition = pictureBox2.Left, Randomizer = Randomizer };
             dogsArray[3] = new Greyhound() { MyPictureBox = pictureBox4, Name = "Jim", RacetrackLength = racetrackPictureBox.Width - racetrackPictureBox.Width, StartingPosition = pictureBox3.Left, Randomizer = Randomizer };
 
-            guyArray[0] = new Guy() { MyBet = null, Name = "Joe", Cash = 50, MyRadioButton = rbJoe, MyLabel = labelJoeBet };
-            guyArray[1] = new Guy() { MyBet = null, Name = "Bob", Cash = 75, MyRadioButton = rbBob, MyLabel = labelBobBet };
-            guyArray[2] = new Guy() { MyBet = null, Name = "Al", Cash = 45, MyRadioButton = rbAl, MyLabel = labelAlBet };
+            guyArray[0] = new Guy() { MyBet = null, Name = "Joe", Cash = 50, MyRadioButton = rbJoe, MyLabel = labelJoe };
+            guyArray[1] = new Guy() { MyBet = null, Name = "Bob", Cash = 75, MyRadioButton = rbBob, MyLabel = labelBob };
+            guyArray[2] = new Guy() { MyBet = null, Name = "Al", Cash = 45, MyRadioButton = rbAl, MyLabel = labelAl };
 
             guyArray[0].UpdateLabels();
             guyArray[1].UpdateLabels();
@@ -94,6 +94,11 @@ namespace DayAtTheRaces
         private void rbAl_CheckedChanged(object sender, EventArgs e)
         {
             rbAl.Text = guyArray[2].Name;
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+
         }
 
     }
